@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <script src="../js/RCal.js"></script>
+    
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cal">
+            <h2>Real Calculator</h2>
+            <form>
+                <div class="results"><input id="display" type="text" name="result" >
+                    <input class="clear" type="button" value="clear" onclick="result.value=' ' " >
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="result.value+='1' ">
+                    <input type="button" value="2" onclick="result.value+='2' ">
+                    <input type="button" value="3" onclick="result.value+='3'">
+                    <input type="button" value="+" onclick="result.value+='+'">
+                </div>
+                
+                <div>
+                    <input type="button" value="4" onclick="result.value+='4'">
+                    <input type="button" value="5" onclick="result.value+='5'">
+                    <input type="button" value="6" onclick="result.value+='6'">
+                    <input type="button" value="-" onclick="result.value+='-'">
+                </div>
+                
+                <div>
+                    <input type="button" value="7" onclick="result.value+='7'">
+                    <input type="button" value="8" onclick="result.value+='8'">
+                    <input type="button" value="9" onclick="result.value+='9'">
+                    <input type="button" value="*" onclick="result.value+='*'">
+                </div>
+                
+                <div>
+                    <input type="button" value="0" onclick="result.value+='0'">
+                    <input type="button" value="00" onclick="result.value+='00'">
+                    <input type="button" value="=" onclick="result.value=eval(result.value)">
+                    <input type="button" value="/" onclick="result.value+='/'">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
